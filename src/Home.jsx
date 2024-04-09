@@ -8,8 +8,6 @@ import Projectdetails from "./Projectdetails";
 import emailjs from "@emailjs/browser";
 
 export const Home = () => {
-
-
   const [projectpassing, setProjectpassing] = useState({
     id: 1,
     tool: "Using - React",
@@ -318,10 +316,7 @@ export const Home = () => {
                           {projectpassing?.description}
                         </p>
                       </div>
-                      <div
-                        className="btnwork ms-5 ps-5"
-                        data-aos="fade-right"
-                      >
+                      <div className="btnwork ms-5 ps-5" data-aos="fade-right">
                         <div className="text-center w-25">
                           <div className="lineforwork my-3"></div>
                           <button className="btn ps-5 border-0 outline-0">
@@ -347,8 +342,11 @@ export const Home = () => {
         <section className="workcarousel container py-5">
           <OwlCarousel className="owl-theme col" autoplay loop autoWidth nav>
             {Projectdetails.map((dd) => (
-              <div className="item"  data-aos="fade-up"
-              data-aos-anchor-placement="bottom-bottom">
+              <div
+                className="item"
+                data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom"
+              >
                 <div className="workimages">
                   <div
                     className="work-img"
@@ -375,8 +373,11 @@ export const Home = () => {
               </div>
             ))}
           </OwlCarousel>
-          <div className="servicebtn text-center"  data-aos="fade-left"
-     data-aos-anchor-placement="top-bottom">
+          <div
+            className="servicebtn text-center"
+            data-aos="fade-left"
+            data-aos-anchor-placement="top-bottom"
+          >
             <Link class="fancy" to="/Work">
               <span class="top-key"></span>
               <span class="text">view more</span>
@@ -393,7 +394,10 @@ export const Home = () => {
           <div className="container">
             <div className="d-flex justify-content-between skill">
               <div className="myskills col-lg-12">
-                <div className="headingforcontact text-center " data-aos="fade-up-right">
+                <div
+                  className="headingforcontact text-center "
+                  data-aos="fade-up-right"
+                >
                   <span className="text-muted">CONTACT</span>
                   <h2>Contact Me</h2>
                 </div>
@@ -406,7 +410,10 @@ export const Home = () => {
                     <div className="col-lg-6 col" data-aos="fade-up-right">
                       <h2>My Address</h2>
                       <div className="py-3">
-                        <div className="maindivforaddress1 d-flex gap-4" data-aos="fade-down-left">
+                        <div
+                          className="maindivforaddress1 d-flex gap-4"
+                          data-aos="fade-down-left"
+                        >
                           <div className="subdivforaddress1">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -427,7 +434,10 @@ export const Home = () => {
                             </p>
                           </div>
                         </div>
-                        <div className="maindivforaddress1 d-flex gap-4" data-aos="fade-down-left">
+                        <div
+                          className="maindivforaddress1 d-flex gap-4"
+                          data-aos="fade-down-left"
+                        >
                           <div className="subdivforaddress1">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -444,7 +454,10 @@ export const Home = () => {
                             <p>9940673040</p>
                           </div>
                         </div>
-                        <div className="maindivforaddress1 d-flex gap-4"data-aos="fade-down-left">
+                        <div
+                          className="maindivforaddress1 d-flex gap-4"
+                          data-aos="fade-down-left"
+                        >
                           <div className="subdivforaddress1">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -467,15 +480,7 @@ export const Home = () => {
                     <div className="col-lg-6 col" data-aos="fade-down-right">
                       <div className="contactform">
                         <form ref={form} onSubmit={sendEmail}>
-                          <textarea
-                            class="form-control rounded-0"
-                            name="message"
-                            id="message"
-                            rows="3"
-                            placeholder="Message"
-                            required
-                          ></textarea>
-                          <div class="row py-3">
+                        <div class="row py-3">
                             <div class="col">
                               <input
                                 type="text"
@@ -497,6 +502,15 @@ export const Home = () => {
                               />
                             </div>
                           </div>
+                          <textarea
+                            class="form-control rounded-0"
+                            name="message"
+                            id="message"
+                            rows="3"
+                            placeholder="Message"
+                            required
+                          ></textarea>
+                         
                           <div className="btncontact my-3">
                             <button className="px-4 py-3" type="submit">
                               <span class="text"> Send message!</span>
@@ -538,7 +552,7 @@ export const Home = () => {
                   />
                 </div>
                 <div className="subdivfooter2 col-lg-6 col mt-5 py-5">
-                  <div className="footerheading"data-aos="fade-left">
+                  <div className="footerheading" data-aos="fade-left">
                     <h1 className="display-1">Let's Talk</h1>
                   </div>
                   <div className="pt-2" data-aos="fade-down-right">
@@ -662,7 +676,9 @@ export const Home = () => {
         <section className="about">
           <div className="container">
             <div className="text-center">
-              <h2 className="aboutbold"data-aos="fade-up">About</h2>
+              <h2 className="aboutbold" data-aos="fade-up">
+                About
+              </h2>
             </div>
             <div className="row">
               <div className="imageLp col">
@@ -674,10 +690,10 @@ export const Home = () => {
                     autoWidth
                     margin={50}
                   >
-                    <div class="item"data-aos="fade-down">
+                    <div class="item" data-aos="fade-down">
                       <img src={require("./Image/picone.png")} alt="" />
                     </div>
-                    <div class="item"data-aos="fade-down">
+                    <div class="item" data-aos="fade-down">
                       <img src={require("./Image/pictwo.png")} alt="" />
                     </div>
                   </OwlCarousel>
@@ -692,14 +708,14 @@ export const Home = () => {
                     autoWidth
                     margin={50}
                   >
-                    <div class="item"data-aos="fade-down">
+                    <div class="item" data-aos="fade-down">
                       <h2 className=" display-6">
                         <span>Vijay</span>
                         <br />
                         <span>Velusamy</span>
                       </h2>
                     </div>
-                    <div class="item"data-aos="fade-down">
+                    <div class="item" data-aos="fade-down">
                       <h2 className="display-6">
                         <span>I'm</span>
                         <br />
@@ -714,7 +730,7 @@ export const Home = () => {
                     <div className="line"></div>
                   </div>
                   <div className="para ms-2 px-3">
-                    <p className="text-muted"data-aos="fade-up">
+                    <p className="text-muted" data-aos="fade-up">
                       As a Dedicated Front End Web Developer with Entry level
                       experience in creating visually appealing and
                       user-friendly websites. Proficient in HTML, CSS, and
@@ -804,11 +820,13 @@ export const Home = () => {
 
         <section className="service">
           <div className="text-center">
-            <h2 className="servicebold" data-aos="fade-up">Service</h2>
+            <h2 className="servicebold" data-aos="fade-up">
+              Service
+            </h2>
           </div>
           <div className="container">
             <div className="skill">
-              <div className="headingforservice ms-5"data-aos="fade-down">
+              <div className="headingforservice ms-5" data-aos="fade-down">
                 <span className="text-muted">My Services</span>
                 <h2>Here Are Some of My Skills</h2>
               </div>
@@ -855,7 +873,7 @@ export const Home = () => {
                     </ul>
                   </div>
                 </div>
-                <div className="servicebtn ms-5 py-3"data-aos="fade-down">
+                <div className="servicebtn ms-5 py-3" data-aos="fade-down">
                   <Link class="fancy" to="/Service">
                     <span class="top-key"></span>
                     <span class="text">view more</span>
@@ -870,7 +888,9 @@ export const Home = () => {
 
         <section className="work" id="works">
           <div className="text-center">
-            <h2 className="servicebold" data-aos="fade-up">Work</h2>
+            <h2 className="servicebold" data-aos="fade-up">
+              Work
+            </h2>
           </div>
           <div className="container">
             <div className="d-flex justify-content-between px-2 skill">
@@ -899,7 +919,7 @@ export const Home = () => {
                           <p>{projectpassing?.tool}</p>
                         </div>
                       </div>
-                      <div className="work-para d-flex justify-content-center py-3"data-aos="fade-down">
+                      <div className="work-para d-flex justify-content-center py-3">
                         <p className="text-start text-muted">
                           {projectpassing?.description}
                         </p>
@@ -937,7 +957,7 @@ export const Home = () => {
             margin={50}
           >
             {Projectdetails.map((dd) => (
-              <div className="item" >
+              <div className="item">
                 <div className="workimages">
                   <div
                     className="work-img my-5"
@@ -1055,15 +1075,7 @@ export const Home = () => {
                     <div className="col my-5">
                       <div className="contactform">
                         <form ref={form} onSubmit={sendEmail}>
-                          <textarea
-                            class="form-control rounded-0"
-                            name="message"
-                            id="message"
-                            rows="3"
-                            placeholder="Message"
-                            required
-                          ></textarea>
-                          <div class="row py-3">
+                        <div class="row py-3">
                             <div class="col">
                               <input
                                 type="text"
@@ -1085,6 +1097,14 @@ export const Home = () => {
                               />
                             </div>
                           </div>
+                          <textarea
+                            class="form-control rounded-0"
+                            name="message"
+                            id="message"
+                            rows="3"
+                            placeholder="Message"
+                            required
+                          ></textarea>
                           <div className="btncontact my-3 text-center">
                             <button className="px-4 py-3" type="submit">
                               <span class="text"> Send message!</span>

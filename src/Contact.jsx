@@ -106,15 +106,7 @@ export const Contact = () => {
                     <div className="col-lg-6 col">
                       <div className="contactform" ata-aos="fade-down">
                       <form ref={form} onSubmit={sendEmail}>
-                        <textarea
-                          class="form-control rounded-0"
-                          name='message'
-                          id='message'
-                          rows="3"
-                          placeholder="Message"
-                          required
-                        ></textarea>
-                        <div class="row py-3">
+                      <div class="row py-3">
                           <div class="col">
                             <input
                               type="text"
@@ -136,6 +128,15 @@ export const Contact = () => {
                             />
                           </div>
                         </div>
+                        <textarea
+                          class="form-control rounded-0"
+                          name='message'
+                          id='message'
+                          rows="3"
+                          placeholder="Message"
+                          required
+                        ></textarea>
+                        
                         <div className="btncontact my-3">
                           <button className="px-4 py-3" type='submit'>
                             <span class="text"> Send message!</span>
@@ -378,15 +379,8 @@ export const Contact = () => {
                     <div className="col my-5">
                       <div className="contactform" data-aos="fade-right">
                       <form ref={form} onSubmit={sendEmail}>
-                        <textarea
-                          class="form-control rounded-0"
-                          name='message'
-                          id='message'
-                          rows="3"
-                          placeholder="Message"
-                          required
-                        ></textarea>
-                        <div class="row py-3">
+
+                      <div class="row py-3">
                           <div class="col">
                             <input
                               type="text"
@@ -408,6 +402,15 @@ export const Contact = () => {
                             />
                           </div>
                         </div>
+                        <textarea
+                          class="form-control rounded-0"
+                          name='message'
+                          id='message'
+                          rows="3"
+                          placeholder="Message"
+                          required
+                        ></textarea>
+                       
                         <div className="btncontact my-3 text-center">
                           <button className="px-4 py-3" type='submit'>
                             <span class="text"> Send message!</span>
