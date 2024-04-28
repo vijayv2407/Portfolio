@@ -111,7 +111,7 @@ export const About = () => {
                     <div className="d-flex gap-3 py-4">
                       <div className="contactbtn">
                         <button className="px-4" alt="RESUME!">
-                            <a href='https://drive.google.com/file/d/1Qo3o0RT2fK-saTVj3qAOWkNmaH7kv7s_/view?usp=drive_link' target="_blank" className="nav-link">
+                            <a href='https://drive.google.com/file/d/1DyGynIIL2agkm8vVuIIBT8BslDcnp7_t/view?usp=sharing' target="_blank" className="nav-link">
                           <i>c</i>
                           <i>o</i>
                           <i>n</i>
@@ -438,7 +438,7 @@ export const About = () => {
                     <div className="d-flex gap-3 py-4">
                       <div className="contactbtn"  data-aos="fade-left">
                         <button className="px-4" alt="RESUME!">
-                        <a href='https://drive.google.com/file/d/1Qo3o0RT2fK-saTVj3qAOWkNmaH7kv7s_/view?usp=drive_link' target="_blank" className="nav-link">
+                        <a href='https://drive.google.com/file/d/1DyGynIIL2agkm8vVuIIBT8BslDcnp7_t/view?usp=sharing' target="_blank" className="nav-link">
                           <i>c</i>
                           <i>o</i>
                           <i>n</i>
