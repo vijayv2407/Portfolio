@@ -16,7 +16,7 @@ export const About = () => {
             <div className="d-flex justify-content-between px-5">
               <div className="imageLp col-lg-6 col">
                 <section className="imagewidth">
-                  <img src={require('./Image/vijayv.png')} width='70%' alt="" className="m-5 rounded-circle"  data-aos="fade-right"/>
+                  <img loading="lazy" src={require('./Image/vijayv.png')} width='70%' alt="" className="m-5 rounded-circle"  data-aos="fade-right"/>
                 </section>
               </div>
               <div className="aboutMe px-5 col-lg-6 col">
@@ -176,10 +176,12 @@ export const About = () => {
                 <img
                   src={require("./Image/Detailed.png")}
                   alt=""
+                  loading="lazy"
                   width="100%"
                   height="100%"
                   className="m-auto"
-                  data-aos="fade-up"/>
+                  data-aos="fade-up"
+                  />
               </div>
             </div>
           </div>
@@ -205,6 +207,7 @@ export const About = () => {
                   <img
                     src={require("./Image/footerback.png")}
                     alt=""
+                    loading="lazy"
                     width="auto"
                   />
                 </div>
@@ -338,7 +341,7 @@ export const About = () => {
             <div className="row">
               <div className="imageLp col">
                 <section className="imagewidth container">
-                <img src={require('./Image/vijayv.png')} width='100%' alt="" className="rounded-circle"  data-aos="fade-up"/>
+                <img src={require('./Image/vijayv.png')} loading="lazy" width='100%' alt="" className="rounded-circle"  data-aos="fade-up"/>
                 </section>
               </div>
               <div className="aboutMe col">
@@ -523,6 +526,7 @@ export const About = () => {
                   <img
                     src={require("./Image/footerback.png")}
                     alt=""
+                    loading="lazy"
                     width="auto"
                   />
                 </div>

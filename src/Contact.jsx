@@ -173,6 +173,7 @@ export const Contact = () => {
                   <img
                     src={require("./Image/footerback.png")}
                     alt=""
+                    loading="lazy"
                     width="auto"
                   />
                 </div>
@@ -447,6 +448,7 @@ export const Contact = () => {
                   <img
                     src={require("./Image/footerback.png")}
                     alt=""
+                    loading="lazy"
                     width="auto"
                   />
                 </div>

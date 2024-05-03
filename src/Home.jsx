@@ -55,6 +55,7 @@ export const Home = () => {
                         src={require("./Image/picone.png")}
                         alt=""
                         width="100%"
+                        loading="lazy"
                       />
                     </div>
                     <div class="item  m-auto">
@@ -62,6 +63,7 @@ export const Home = () => {
                         src={require("./Image/pictwo.png")}
                         alt=""
                         width="100%"
+                        loading="lazy"
                       />
                     </div>
                   </OwlCarousel>
@@ -261,6 +263,7 @@ export const Home = () => {
                   width="100%"
                   height="100%"
                   className="m-auto"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -549,6 +552,7 @@ export const Home = () => {
                     src={require("./Image/footerback.png")}
                     alt=""
                     width="auto"
+                    loading="lazy"
                   />
                 </div>
                 <div className="subdivfooter2 col-lg-6 col mt-5 py-5">
@@ -672,6 +676,7 @@ export const Home = () => {
           </div>
         </footer>
       </div>
+
       <div className="phone">
         <section className="about">
           <div className="container">
@@ -691,10 +696,10 @@ export const Home = () => {
                     margin={50}
                   >
                     <div class="item" data-aos="fade-down">
-                      <img src={require("./Image/picone.png")} alt="" />
+                      <img src={require("./Image/picone.png")} alt="" loading="lazy" />
                     </div>
                     <div class="item" data-aos="fade-down">
-                      <img src={require("./Image/pictwo.png")} alt="" />
+                      <img src={require("./Image/pictwo.png")} alt="" loading="lazy" />
                     </div>
                   </OwlCarousel>
                 </section>
@@ -913,6 +918,7 @@ export const Home = () => {
                           backgroundImage: `url(${projectpassing.img})`,
                         }}
                         data-aos="fade-down"
+                        loading="lazy"
                       >
                         <div className="work-name text-center p-5">
                           <h2>{projectpassing?.project}</h2>
@@ -963,6 +969,7 @@ export const Home = () => {
                     className="work-img my-5"
                     style={{ backgroundImage: `url(${dd.img})` }}
                     data-aos="fade-up-left"
+                    loading="lazy"
                   >
                     <div className="work-name text-center" data-aos="fade-down">
                       <h6>{dd.project}</h6>
@@ -1143,6 +1150,7 @@ export const Home = () => {
                     src={require("./Image/footerback.png")}
                     alt=""
                     width="auto"
+                    loading="lazy"
                   />
                 </div>
                 <div className="subdivfooter2 col" data-aos="fade-up-right">

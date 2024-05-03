@@ -12,6 +12,7 @@ export const Header = () => {
                 <img
                   src={require("./Image/vlogo.png")}
                   alt=""
+                  loading="lazy"
                   data-aos="fade-left"
                 />
               </Link>
@@ -77,13 +78,13 @@ export const Header = () => {
                   <Link class="nav-link" to="./Work">
                     <div className="row gap-3">
                       <div className="border">
-                        <img src={require("./Image/Onlinechat.png")} alt="" width='100%' />
+                        <img src={require("./Image/Onlinechat.png")} loading="lazy"  alt="" width='100%' />
                       </div>
                       <div className="border">
-                        <img src={require("./Image/cartimg.png")} alt="" width='100%' />
+                        <img src={require("./Image/cartimg.png")}  loading="lazy" alt="" width='100%' />
                       </div>
                       <div className="border">
-                        <img src={require("./Image/ecommerce.png")} alt="" width='100%' />
+                        <img src={require("./Image/ecommerce.png")} loading="lazy"  alt="" width='100%' />
                       </div>
                     </div>
                   </Link>

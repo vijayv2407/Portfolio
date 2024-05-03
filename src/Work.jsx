@@ -31,6 +31,7 @@ export const Work = () => {
                           <div
                             className="work-img border"
                             style={{ backgroundImage: `url(${tt.img})` }}
+                            loading="lazy"
                             data-aos="fade-left"
                           >
                             <div className="work-name text-center" data-aos="fade-up">
@@ -89,6 +90,7 @@ export const Work = () => {
                   <img
                     src={require("./Image/footerback.png")}
                     alt=""
+                    loading="lazy"
                     width="auto"
                   />
                 </div>
@@ -238,6 +240,7 @@ export const Work = () => {
                           <div
                             className="work-img border"
                             style={{ backgroundImage: `url(${tt.img})` }}
+                            loading="lazy"
                           >
                             <div className="work-name text-center"data-aos="fade-right">
                               <h2>{tt.project}</h2>
@@ -295,6 +298,7 @@ export const Work = () => {
                   <img
                     src={require("./Image/footerback.png")}
                     alt=""
+                    loading="lazy"
                     width="auto"
                   />
                 </div>

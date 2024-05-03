@@ -65,6 +65,7 @@ export const Service = () => {
                 <img
                   src={require("./Image/service.png")}
                   alt=""
+                  loading="lazy"
                   width="100%"
                   height="100%"
                   className="m-auto"
@@ -83,6 +84,7 @@ export const Service = () => {
                 <img
                   src={require("./Image/Certificate.png")}
                   alt=""
+                  loading="lazy"
                   width="100%"
                   height="100%"
                   className="m-auto"
@@ -178,6 +180,7 @@ export const Service = () => {
                     src={require("./Image/footerback.png")}
                     alt=""
                     width="auto"
+                    loading="lazy"
                   />
                 </div>
                 <div className="subdivfooter2 col-lg-6 col mt-5 py-5">
@@ -448,6 +451,7 @@ export const Service = () => {
                   <img
                     src={require("./Image/footerback.png")}
                     alt=""
+                    loading="lazy"
                     width="auto"
                   />
                 </div>
