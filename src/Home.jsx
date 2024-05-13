@@ -49,24 +49,14 @@ export const Home = () => {
             <div className="row my-5 pt-5">
               <div className="imageLp col-lg-6 col" data-aos="fade-right">
                 <section className="imagewidth">
-                  <OwlCarousel className="owl-theme" autoplay loop autoWidth>
-                    <div class="item  m-auto">
-                      <img
-                        src={require("./Image/picone.png")}
-                        alt=""
-                        width="100%"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div class="item  m-auto">
-                      <img
-                        src={require("./Image/pictwo.png")}
-                        alt=""
-                        width="100%"
-                        loading="lazy"
-                      />
-                    </div>
-                  </OwlCarousel>
+                  <img
+                    loading="lazy"
+                    src={require("./Image/vijayv.png")}
+                    width="70%"
+                    alt=""
+                    className="mx-5 rounded-circle"
+                    data-aos="fade-right"
+                  />
                 </section>
               </div>
               <div className="aboutMe px-5 col-lg-6 col" data-aos="fade-left">
@@ -319,7 +309,7 @@ export const Home = () => {
                           {projectpassing?.description}
                         </p>
                       </div>
-                      <div className="btnwork ms-5 ps-5" data-aos="fade-right">
+                      <div className="btnwork ms-5 ps-5">
                         <div className="text-center w-25">
                           <div className="lineforwork my-3"></div>
                           <button className="btn ps-5 border-0 outline-0">
@@ -359,6 +349,9 @@ export const Home = () => {
                       <h6>{dd.project}</h6>
                     </div>
                   </div>
+                  <div className="m-3 workfont">
+                    <p>{dd.description}</p>
+                  </div>
                   <div className="btnworks">
                     <div className="text-center my-3">
                       <div className="lineforwork"></div>
@@ -377,7 +370,7 @@ export const Home = () => {
             ))}
           </OwlCarousel>
           <div
-            className="servicebtn text-center"
+            className="servicebtn text-center py-3"
             data-aos="fade-left"
             data-aos-anchor-placement="top-bottom"
           >
@@ -483,7 +476,7 @@ export const Home = () => {
                     <div className="col-lg-6 col" data-aos="fade-down-right">
                       <div className="contactform">
                         <form ref={form} onSubmit={sendEmail}>
-                        <div class="row py-3">
+                          <div class="row py-3">
                             <div class="col">
                               <input
                                 type="text"
@@ -513,7 +506,7 @@ export const Home = () => {
                             placeholder="Message"
                             required
                           ></textarea>
-                         
+
                           <div className="btncontact my-3">
                             <button className="px-4 py-3" type="submit">
                               <span class="text"> Send message!</span>
@@ -688,20 +681,14 @@ export const Home = () => {
             <div className="row">
               <div className="imageLp col">
                 <section className="imagewidth container">
-                  <OwlCarousel
-                    className="owl-theme"
-                    autoplay
-                    loop
-                    autoWidth
-                    margin={50}
-                  >
-                    <div class="item" data-aos="fade-down">
-                      <img src={require("./Image/picone.png")} alt="" loading="lazy" />
-                    </div>
-                    <div class="item" data-aos="fade-down">
-                      <img src={require("./Image/pictwo.png")} alt="" loading="lazy" />
-                    </div>
-                  </OwlCarousel>
+                  <img
+                    src={require("./Image/vijayv.png")}
+                    loading="lazy"
+                    width="100%"
+                    alt=""
+                    className="rounded-circle"
+                    data-aos="fade-up"
+                  />
                 </section>
               </div>
               <div className="aboutMe col py-3">
@@ -1082,7 +1069,7 @@ export const Home = () => {
                     <div className="col my-5">
                       <div className="contactform">
                         <form ref={form} onSubmit={sendEmail}>
-                        <div class="row py-3">
+                          <div class="row py-3">
                             <div class="col">
                               <input
                                 type="text"
