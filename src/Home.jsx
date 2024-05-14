@@ -310,7 +310,7 @@ export const Home = () => {
                                 </button>
                                 <button className="btn border-0 ms-5">
                                   <a
-                                    href={""}
+                                    href={dd.code}
                                     target="_blank"
                                     className="text-dark"
                                   >
@@ -887,7 +887,7 @@ export const Home = () => {
                                 </button>
                                 <button className="btn border-0 ms-5">
                                   <a
-                                    href={""}
+                                    href={dd.code}
                                     target="_blank"
                                     className="text-dark"
                                   >
