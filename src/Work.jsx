@@ -5,71 +5,71 @@ import Projectdetails from "./Projectdetails";
 export const Work = () => {
   return (
     <div>
-     
       <div className="laptop">
-      <section className="work">
-        <div className="text-center">
-          <h2 className="servicebold">Work</h2>
-        </div>
-        <div className="container">
-          <div className="d-flex justify-content-between px-2 skill">
-            <div className="myskills col">
-              <div className="headingforwork text-center ">
-                <span className="text-muted">PORTFOLIO</span>
-                <h2>Done Projects</h2>
-              </div>
-              <div>
-                <div className="rotate">
-                  <h2>PORTFOLIO</h2>
-                  <div className="line"></div>
+        <section className="work">
+          <div className="text-center">
+            <h2 className="servicebold">Work</h2>
+          </div>
+          <div className="container">
+            <div className="d-flex justify-content-between px-2 skill">
+              <div className="myskills col">
+                <div className="headingforwork text-center ">
+                  <span className="text-muted">PORTFOLIO</span>
+                  <h2>Done Projects</h2>
                 </div>
-                <section>
-                  {Projectdetails.map((tt) => (
-                    <div className="works row gap-5 mb-5 pb-5"  data-aos="fade-right">
-                      <div className="workimages col-lg-12 col">
-                        <div className="hoverback">
-                          <div
-                            className="work-img border"
-                            style={{ backgroundImage: `url(${tt.img})` }}
-                            loading="lazy"
-                            data-aos="fade-left"
-                          >
-                            <div className="work-name text-center" data-aos="fade-up">
-                              <h2>{tt.project}</h2>
-                              <p>{tt.tool}</p>
-                            </div>
-                          </div>
-                          <div className="work-para d-flex justify-content-center pt-5 pb-3" data-aos="fade-down">
-                            <p className="text-start text-muted ">
-                              {tt.description}
-                            </p>
-                          </div>
-                          <div className="btnwork ms-5 ps-5">
-                            <div className="text-center w-25">
-                              <div className="lineforwork my-3"></div>
-                              <button className="btn ps-5 border-0 outline-0 ">
-                                <a
-                                  href={tt.url}
-                                  className="nav-link"
-                                  target="_blank"
-                                >
-                                  {" "}
-                                  Website Link{" "}
-                                </a>
-                              </button>
+                <div>
+                  <div className="rotate">
+                    <h2>PORTFOLIO</h2>
+                    <div className="line"></div>
+                  </div>
+                  <section>
+                    {Projectdetails.map((tt) => (
+                      <div className="row container" data-aos="fade-right">
+                        <div className="workimages col mb-3">
+                          <div className="border pt-3">
+                            <div
+                              className="work-img"
+                              style={{ backgroundImage: `url(${tt.img})` }}
+                              loading="lazy"
+                              data-aos="fade-left"
+                            ></div>
+                            <div className="ps-5 py-5">
+                              <div className="">
+                                <h3>{tt.project}</h3>
+                                <h6>{tt.tool}</h6>
+                              </div>
+                              <div>
+                                <p className="text-start text-muted w-75 ">
+                                  {tt.description}
+                                </p>
+                              </div>
+                              <div className="btnwork">
+                                <div className="text-center w-25">
+                                  <div className="lineforwork my-3"></div>
+                                  <button className="btn border-0 outline-0 ">
+                                    <a
+                                      href={tt.url}
+                                      className="text-dark"
+                                      target="_blank"
+                                    >
+                                      {" "}
+                                      Website Link{" "}
+                                    </a>
+                                  </button>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  ))}
-                </section>
+                    ))}
+                  </section>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <footer>
+        </section>
+        <footer>
           <div className="footerback">
             <div class="custom-shape-divider-top-1711354577">
               <svg
@@ -95,7 +95,7 @@ export const Work = () => {
                   />
                 </div>
                 <div className="subdivfooter2 col-lg-6 col mt-5 py-5">
-                  <div className="footerheading"data-aos="fade-left">
+                  <div className="footerheading" data-aos="fade-left">
                     <h1 className="display-1">Let's Talk</h1>
                   </div>
                   <div className="pt-2" data-aos="fade-down-right">
@@ -216,68 +216,69 @@ export const Work = () => {
         </footer>
       </div>
       <div className="phone">
-      <section className="work">
-        <div className="text-center">
-          <h2 className="servicebold">Work</h2>
-        </div>
-        <div className="container">
-          <div className="d-flex justify-content-between px-2 skill">
-            <div className="myskills col">
-              <div className="headingforwork text-center ">
-                <span className="text-muted">PORTFOLIO</span>
-                <h2>Done Projects</h2>
-              </div>
-              <div>
-                <div className="rotate">
-                  <h2>PORTFOLIO</h2>
-                  <div className="line"></div>
+        <section className="work">
+          <div className="text-center">
+            <h2 className="servicebold">Work</h2>
+          </div>
+          <div className="container">
+            <div className="d-flex justify-content-between px-2 skill">
+              <div className="myskills col">
+                <div className="headingforwork text-center ">
+                  <span className="text-muted">PORTFOLIO</span>
+                  <h2>Done Projects</h2>
                 </div>
-                <section>
-                  {Projectdetails.map((tt) => (
-                    <div className="works row gap-5 mb-5 pb-5">
-                      <div className="workimages col-lg-12 col" data-aos="fade-down">
-                        <div className="hoverback">
-                          <div
-                            className="work-img border"
-                            style={{ backgroundImage: `url(${tt.img})` }}
-                            loading="lazy"
-                          >
-                            <div className="work-name text-center"data-aos="fade-right">
-                              <h2>{tt.project}</h2>
-                              <p>{tt.tool}</p>
-                            </div>
-                          </div>
-                          <div className="work-para d-flex justify-content-center pt-5 pb-3" data-aos="fade-right">
-                            <p className="text-start text-muted ">
-                              {tt.description}
-                            </p>
-                          </div>
-                          <div className="btnwork ms-5 ps-5">
-                            <div className="text-center w-25">
-                              <div className="lineforwork my-3"></div>
-                              <button className="btn ps-5 border-0 outline-0 ">
-                                <a
-                                  href={tt.url}
-                                  className="nav-link"
-                                  target="_blank"
-                                >
-                                  {" "}
-                                  Website Link{" "}
-                                </a>
-                              </button>
+                <div>
+                  <div className="rotate">
+                    <h2>PORTFOLIO</h2>
+                    <div className="line"></div>
+                  </div>
+                  <section>
+                    {Projectdetails.map((tt) => (
+                      <div className="row container" data-aos="fade-right">
+                        <div className="workimages">
+                          <div className="hoverback">
+                            <div
+                              className="work-img"
+                              style={{ backgroundImage: `url(${tt.img})` }}
+                              loading="lazy"
+                              data-aos="fade-left"
+                            ></div>
+                            <div className="ms-2">
+                              <div className="">
+                                <h3>{tt.project}</h3>
+                                <h6>{tt.tool}</h6>
+                              </div>
+                              <div>
+                                <p className="text-start text-muted">
+                                  {tt.description}
+                                </p>
+                              </div>
+                              <div className="btnwork">
+                                <div className="text-center">
+                                  <button className="btn border-0 outline-0 ">
+                                    <a
+                                      href={tt.url}
+                                      className="text-dark"
+                                      target="_blank"
+                                    >
+                                      {" "}
+                                      Website Link{" "}
+                                    </a>
+                                  </button>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  ))}
-                </section>
+                    ))}
+                  </section>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <footer>
+        </section>
+        <footer>
           <div className="footerback">
             <div class="custom-shape-divider-top-1711354577">
               <svg

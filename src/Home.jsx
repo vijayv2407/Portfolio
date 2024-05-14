@@ -52,9 +52,9 @@ export const Home = () => {
                   <img
                     loading="lazy"
                     src={require("./Image/vijayv.png")}
-                    width="70%"
+                    width="80%"
                     alt=""
-                    className="mx-5 rounded-circle"
+                    className="ms-5 ps-5"
                     data-aos="fade-right"
                   />
                 </section>
@@ -85,11 +85,11 @@ export const Home = () => {
                   </div>
                   <div className="para ms-2 px-3">
                     <p className="text-muted">
-                      As a Dedicated Front End Web Developer with Entry level
-                      experience in creating visually appealing and
-                      user-friendly websites. Proficient in HTML, CSS, and
-                      JavaScript, React with a strong foundation in responsive
-                      design and cross-browser compatibility.
+                      As a committed front-end web developer with starting
+                      knowledge of building aesthetically pleasing and intuitive
+                      websites. React is an expert in HTML, CSS, and JavaScript
+                      with a solid background in cross-browser compatibility and
+                      responsive design.
                     </p>
                     <div className="icons d-flex gap-3">
                       <div className="linkedin">
@@ -279,107 +279,67 @@ export const Home = () => {
                     <h2>PORTFOLIO</h2>
                     <div className="line"></div>
                   </div>
-
-                  <div className="works row gap-5" id="works">
-                    <div className="workimages col-lg-12">
-                      <div
-                        className="work-img border"
-                        style={{
-                          backgroundImage: `url(${projectpassing.img})`,
-                        }}
-                        data-aos="fade-left"
-                        data-aos-anchor="#example-anchor"
-                        data-aos-offset="500"
-                        data-aos-duration="500"
-                      >
+                  <section className="workcarousel container">
+                    <div className="row">
+                      {Projectdetails.map((dd) => (
                         <div
-                          className="work-name text-center p-5"
+                          className="col-md-4 mb-2"
                           data-aos="fade-down"
                           data-aos-anchor-placement="bottom-bottom"
                         >
-                          <h2>{projectpassing?.project}</h2>
-                          <p>{projectpassing?.tool}</p>
+                          <div className="workimages border p-1">
+                            <div
+                              className="work-img"
+                              style={{ backgroundImage: `url(${dd.img})` }}
+                            ></div>
+                            <div className="ps-3 workfont">
+                              <h4>{dd.project}</h4>
+                              <h6 className="fs-6">{dd.tool}</h6>
+                              <p className="text-muted">{dd.description}</p>
+                            </div>
+                            <div className="btnworks">
+                              <div className="py-2">
+                                <button className="btn border-0">
+                                  <a
+                                    href={dd.url}
+                                    target="_blank"
+                                    className="text-dark"
+                                  >
+                                    Live Preview
+                                  </a>
+                                </button>
+                                <button className="btn border-0 ms-5">
+                                  <a
+                                    href={""}
+                                    target="_blank"
+                                    className="text-dark"
+                                  >
+                                    View Code
+                                  </a>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                      <div
-                        className="work-para d-flex justify-content-center pt-5 pb-3"
-                        data-aos="fade-up"
-                      >
-                        <p className="text-start text-muted">
-                          {projectpassing?.description}
-                        </p>
-                      </div>
-                      <div className="btnwork ms-5 ps-5">
-                        <div className="text-center w-25">
-                          <div className="lineforwork my-3"></div>
-                          <button className="btn ps-5 border-0 outline-0">
-                            <a
-                              href={projectpassing.url}
-                              target="_blank"
-                              rel="noopener"
-                              className="nav-link"
-                            >
-                              Website link
-                            </a>
-                          </button>
-                        </div>
-                      </div>
+                      ))}
                     </div>
-                  </div>
+
+                    <div
+                      className="servicebtn text-center py-3"
+                      data-aos="fade-left"
+                      data-aos-anchor-placement="top-bottom"
+                    >
+                      <Link class="fancy" to="/Work">
+                        <span class="top-key"></span>
+                        <span class="text">view more</span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                      </Link>
+                    </div>
+                  </section>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-
-        <section className="workcarousel container py-5">
-          <OwlCarousel className="owl-theme col" autoplay loop autoWidth nav>
-            {Projectdetails.map((dd) => (
-              <div
-                className="item"
-                data-aos="fade-up"
-                data-aos-anchor-placement="bottom-bottom"
-              >
-                <div className="workimages">
-                  <div
-                    className="work-img"
-                    style={{ backgroundImage: `url(${dd.img})` }}
-                  >
-                    <div className="work-name text-center">
-                      <h6>{dd.project}</h6>
-                    </div>
-                  </div>
-                  <div className="m-3 workfont">
-                    <p>{dd.description}</p>
-                  </div>
-                  <div className="btnworks">
-                    <div className="text-center my-3">
-                      <div className="lineforwork"></div>
-                      <button
-                        className="btn border-0 outline-0"
-                        onClick={() => setProjectpassing(dd)}
-                      >
-                        <a href="#works" className="nav-link">
-                          View Project
-                        </a>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </OwlCarousel>
-          <div
-            className="servicebtn text-center py-3"
-            data-aos="fade-left"
-            data-aos-anchor-placement="top-bottom"
-          >
-            <Link class="fancy" to="/Work">
-              <span class="top-key"></span>
-              <span class="text">view more</span>
-              <span class="bottom-key-1"></span>
-              <span class="bottom-key-2"></span>
-            </Link>
           </div>
         </section>
 
@@ -723,11 +683,11 @@ export const Home = () => {
                   </div>
                   <div className="para ms-2 px-3">
                     <p className="text-muted" data-aos="fade-up">
-                      As a Dedicated Front End Web Developer with Entry level
-                      experience in creating visually appealing and
-                      user-friendly websites. Proficient in HTML, CSS, and
-                      JavaScript, React with a strong foundation in responsive
-                      design and cross-browser compatibility.
+                      As a committed front-end web developer with starting
+                      knowledge of building aesthetically pleasing and intuitive
+                      websites. React is an expert in HTML, CSS, and JavaScript
+                      with a solid background in cross-browser compatibility and
+                      responsive design.
                     </p>
                     <div className="icons d-flex gap-3" data-aos="fade-up">
                       <div className="linkedin">
@@ -896,91 +856,58 @@ export const Home = () => {
                     <h2>PORTFOLIO</h2>
                     <div className="line"></div>
                   </div>
-
-                  <div className="works row gap-5">
-                    <div className="workimages">
-                      <div
-                        className="work-img border"
-                        style={{
-                          backgroundImage: `url(${projectpassing.img})`,
-                        }}
-                        data-aos="fade-down"
-                        loading="lazy"
-                      >
-                        <div className="work-name text-center p-5">
-                          <h2>{projectpassing?.project}</h2>
-                          <p>{projectpassing?.tool}</p>
+                  <section className="workcarousel container">
+                    <div className="row">
+                      {Projectdetails.map((dd) => (
+                        <div
+                          className="col-md-4 mb-2"
+                          data-aos="fade-up"
+                          data-aos-anchor-placement="bottom-bottom"
+                        >
+                          <div className="workimages border p-1">
+                            <div
+                              className="work-img"
+                              style={{ backgroundImage: `url(${dd.img})` }}
+                            ></div>
+                            <div className="ps-3 workfont">
+                              <h4>{dd.project}</h4>
+                              <h6 className="fs-6">{dd.tool}</h6>
+                              <p className="text-muted">{dd.description}</p>
+                            </div>
+                            <div className="btnworks">
+                              <div className="py-2">
+                                <button className="btn border-0">
+                                  <a
+                                    href={dd.url}
+                                    target="_blank"
+                                    className="text-dark"
+                                  >
+                                    Live Preview
+                                  </a>
+                                </button>
+                                <button className="btn border-0 ms-5">
+                                  <a
+                                    href={""}
+                                    target="_blank"
+                                    className="text-dark"
+                                  >
+                                    View Code
+                                  </a>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                      <div className="work-para d-flex justify-content-center py-3">
-                        <p className="text-start text-muted">
-                          {projectpassing?.description}
-                        </p>
-                      </div>
-                      <div className="btnwork">
-                        <div className="text-center w-25">
-                          <div className="lineforwork my-3"></div>
-                          <button className="btn ps-5 border-0 outline-0">
-                            <a
-                              href={projectpassing.url}
-                              target="_blank"
-                              rel="noopener"
-                              className="nav-link"
-                            >
-                              link
-                            </a>
-                          </button>
-                        </div>
-                      </div>
+                      ))}
                     </div>
-                  </div>
+                  </section>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="workcarousel container">
-          <OwlCarousel
-            className="owl-theme col"
-            autoplay
-            loop
-            autoWidth
-            nav
-            margin={50}
-          >
-            {Projectdetails.map((dd) => (
-              <div className="item">
-                <div className="workimages">
-                  <div
-                    className="work-img my-5"
-                    style={{ backgroundImage: `url(${dd.img})` }}
-                    data-aos="fade-up-left"
-                    loading="lazy"
-                  >
-                    <div className="work-name text-center" data-aos="fade-down">
-                      <h6>{dd.project}</h6>
-                    </div>
-                  </div>
-                  <div className="btnworks" data-aos="fade-down">
-                    <div className="text-center my-3">
-                      <div className="lineforwork"></div>
-                      <button
-                        className="btn border-0 outline-0"
-                        onClick={() => setProjectpassing({ dd })}
-                      >
-                        <a href="#works" className="nav-link">
-                          View Project
-                        </a>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </OwlCarousel>
-        </section>
-        <div className="servicebtn text-center">
+        <div className="servicebtn text-center my-3">
           <Link class="fancy" to="/Work">
             <span class="top-key"></span>
             <span class="text">view more</span>

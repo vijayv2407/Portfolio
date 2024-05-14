@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif, serif;
-  user-select: none;
+  /* user-select: none; */
 }
 .logo img {
   width: 100px;
@@ -229,7 +229,6 @@ li {
   justify-content: center;
   align-items: center;
   transition: 0.5s ease;
-  margin-left: 50px;
 }
 .lineforwork {
   position: absolute;
@@ -237,12 +236,8 @@ li {
   width: 70px;
   height: 1px;
   background: #000;
-  margin-left: 10px;
 }
-.btnwork {
-  display: flex !important;
-  justify-content: center !important;
-}
+
 .btnwork button {
   color: #000;
   text-transform: uppercase;
@@ -251,32 +246,13 @@ li {
   position: relative;
 }
 .workcarousel .work-img {
-  width: 75%;
-  height: 50vh;
+  width: 95%;
+  height: 35vh;
   background: no-repeat center;
   background-size: contain;
   transition: 0.5s ease;
-  border: 0.1px solid #c5c5c5;
-  margin: 0 10px;
-}
-.workcarousel .work-name {
-  display: inline-block;
-  padding: 4em;
-  background: #fff0;
-  box-shadow: 0 2px 49px -4px rgb(0 0 0 / 0.21);
-  transition: 0.3s all ease;
-  font-size: 10px;
-}
-.workcarousel .work-name:hover {
-  padding: 50px;
-  transition: 0.3s;
-  cursor: pointer;
-  letter-spacing: 3px;
-  border: 0.5px solid #ca82f8;
-  background: #ca82f8;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 16px;
+  margin: 10px;
+
 }
 .workcarousel .owl-nav {
   position: absolute !important;
@@ -593,9 +569,7 @@ li {
   right: 0;
   width: 0;
 }
-.workfont{
-    width: 300px;
-}
+
 .workfont p{
     font-size: 10px !important;
 }
@@ -636,14 +610,13 @@ li {
   }
   .work-img {
     width: 88vw;
-    height: 40vh;
+    height: 26vh;
     background: no-repeat center;
     background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.5s ease;
-    margin-left: 14px;
   }
   .lineforwork {
     position: absolute;
@@ -669,15 +642,13 @@ li {
     justify-content: center;
     align-items: center;
   }
-  .workcarousel .work-img {
-    width: 90vw !important;
-    height: 35vh !important;
-    background: no-repeat center;
-    background-size: contain;
-    transition: 0.5s ease;
-    border: 0.1px solid #c5c5c5;
-    margin: 0 10px;
-  }
+    .workcarousel .work-img {
+        width: 80vw !important;
+        height: 23vh !important;
+        background: no-repeat center;
+        background-size: contain;
+        transition: 0.5s ease;
+    }
   .item {
     width: 455px !important;
     height: 420px !important;
