@@ -99,9 +99,8 @@ export const Service = () => {
                     className="text-muted fw-semibold fs-5"
                     data-aos="fade-left"
                   >
-                    My education has been a journey of self-discovery and
-                    data-aos="fade-left" growth. My educational details are as
-                    follows.
+                    My academic journey has been one of personal development and
+                    self-discovery. I've listed my educational background below.
                   </p>
                 </div>
                 <div className=" d-flex flex-wrap">
